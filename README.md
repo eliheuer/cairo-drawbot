@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/eliheuer/CairoDrawBot"><img src="images/icon-4x.gif" alt="DrawBot" width="128" height="128"/></a><br>
-  <a href="https://github.com/eliheuer/CairoDrawBot">Cairo DrawBot</a>
+  <p>Cairo DrawBot</p>
 </h1>
 
 <h4 align="center">A GNU+Linux compatible fork of <a href="https://github.com/typemytype/drawbot">DrawBot</a>.</h4>
