@@ -1,5 +1,9 @@
-# Cairo DrawBot
-A fork of DrawBot compatible with GNU+Linux. (forked from https://github.com/typemytype/drawbot)
+<h1 align="center">
+  <a href="https://github.com/eliheuer/CairoDrawBot"><img src="images/icon-4x.gif" alt="DrawBot" width="128" height="128"/></a><br>
+  <a href="https://github.com/eliheuer/CairoDrawBot">Cairo DrawBot</a>
+</h1>
+
+<h4 align="center">A fork of DrawBot compatible with GNU+Linux.</h4>
 
 This is a work in progess and only aims for basic compatibility, no GUI is planned at this point. 
 
