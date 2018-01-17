@@ -5,7 +5,7 @@
 
 <h4 align="center">A GNU+Linux compatible fork of <a href="https://github.com/typemytype/drawbot">DrawBot</a>.</h4>
 
-This is a work in progess and only aims for basic compatibility, no GUI is planned at this point.
+<h4 align="center">🚧 This is a work in progress and only aims for basic compatibility with DrawBot. 🚧</h4>
 
 ## Install
 
@@ -13,33 +13,33 @@ First make a Python3 virtual environment to work in, this way all our dependenci
 ```
 python3 -m venv drawbot
 ```
-Now `cd` into the directory and enter:
+Now `cd` into the directory and start the virtual environment:
 ```
+cd drawbot
 source bin/activate
 ```
+To exit venv at any time enter `deactivate`.
+
 Note: This works for most shells like BASH and ZSH, but if you are using a non-standard shell like fish another method is used.
 
 Now we need to install our dependencies. there is a file in the root directory of this project called requirements.txt, it contains a list of dependencies used to build this project, it should look something like this:
-
 ```
-pycairo==1.15.4
-fonttools==3.17.0
-ufoLib==2.1.0
-defcon==0.3.5
+cairocffi
+numpy
 ```
-Instead of installing each dependency sepratly, we can install them all at once by entering:
+Instead of installing each dependency separately, we can install them all at once by entering:
 ```
 pip install -U -r requirements.txt
 ```
 You must have `pip` installed for this to work, see install instructions [here](https://pip.pypa.io/en/stable/installing/).
 
-At any time you can use `pip list` to list th ecurrently installed dependencies.
+At any time you can use `pip list` to list the currently installed dependencies.
 
-Now we will install cairodrawbot in editable mode, so we can make changes to the code and test those changes without reinstalling each time. Navigate the the root directory of the project and enter:
+Now we will install cairodrawbot in editable mode, so we can make changes to the code and test those changes without reinstalling each time. Navigate the root directory of the project and enter:
 ```
 pip install --editable .
 ```
-After installing in editable mode you can run `pip list` and see that our dependencies and cairodrawbot are installed. cairodrawbot should have an extra note showing it's location, beacuse it was installed with `--editable`, you should get something like this:
+After installing in editable mode you can run `pip list` and see that our dependencies and cairodrawbot are installed. cairodrawbot should have an extra note showing its location, because it was installed with `--editable`, you should get something like this:
 ```
 (drawbot) > $ pip list
 cairocffi (0.8.0)
@@ -50,10 +50,9 @@ pip (9.0.1)
 pycparser (2.18)
 setuptools (28.8.0)
 ```
-
-Now, if everything installed corectly, we can test cairodrawbot by navigating to the `examples/` directory and running one of the example files, like so:
+Now, if everything installed correctly, we can test cairodrawbot by navigating to the `examples/` directory and running one of the example files, like so:
 ```
 cd examples
 python example.py
 ```
-The resulting image should have been generated, look for it in the examples folder.
+A new image should have been generated, look for it in the examples folder.
