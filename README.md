@@ -39,6 +39,18 @@ Now we will install cairodrawbot in editable mode, so we can make changes to the
 ```
 pip install --editable .
 ```
+After installing in editable mode you can run `pip list` and see that our dependencies and cairodrawbot are installed. cairodrawbot should have an extra note showing it's location, beacuse it was installed with `--editable`, you should get something like this:
+```
+(drawbot) > $ pip list
+cairocffi (0.8.0)
+cairodrawbot (0.0.10, /home/user/drawbot/cairo-drawbot)
+cffi (1.11.4)
+numpy (1.14.0)
+pip (9.0.1)
+pycparser (2.18)
+setuptools (28.8.0)
+```
+
 Now, if everything installed corectly, we can test cairodrawbot by navigating to the `examples/` directory and running one of the example files, like so:
 ```
 cd examples
