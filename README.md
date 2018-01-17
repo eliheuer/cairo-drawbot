@@ -5,7 +5,7 @@
 
 <h4 align="center">A GNU+Linux compatible fork of <a href="https://github.com/typemytype/drawbot">DrawBot</a>.</h4>
 
-This is a work in progess and only aims for basic compatibility, no GUI is planned at this point. 
+This is a work in progess and only aims for basic compatibility, no GUI is planned at this point.
 
 ## Install
 
@@ -17,7 +17,7 @@ Now `cd` into the directory and enter:
 ```
 source bin/activate
 ```
-Note: This works for most shells like BASH and ZSH, but if you are using a non-standard shell like fish another method is used. 
+Note: This works for most shells like BASH and ZSH, but if you are using a non-standard shell like fish another method is used.
 
 Now we need to install our dependencies. there is a file in the root directory of this project called requirements.txt, it contains a list of dependencies used to build this project, it should look something like this:
 
@@ -27,8 +27,21 @@ fonttools==3.17.0
 ufoLib==2.1.0
 defcon==0.3.5
 ```
-Instead of installing each dependency sepratly, we can install them all at once by entering: 
+Instead of installing each dependency sepratly, we can install them all at once by entering:
 ```
-pip install -U -r requirements.txt 
+pip install -U -r requirements.txt
 ```
 You must have `pip` installed for this to work, see install instructions [here](https://pip.pypa.io/en/stable/installing/).
+
+At any time you can use `pip list` to list th ecurrently installed dependencies.
+
+Now we will install cairodrawbot in editable mode, so we can make changes to the code and test those changes without reinstalling each time. Navigate the the root directory of the project and enter:
+```
+pip install --editable .
+```
+Now, if everything installed corectly, we can test cairodrawbot by navigating to the `examples/` directory and running one of the example files, like so:
+```
+cd examples
+python example.py
+```
+The resulting image should have been generated, look for it in the examples folder.
