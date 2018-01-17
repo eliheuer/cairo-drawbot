@@ -4,10 +4,10 @@
 </h1>
 
 <h4 align="center">A GNU+Linux compatible fork of <a href="https://github.com/typemytype/drawbot">DrawBot</a>.</h4>
-
 <h4 align="center">🚧 This is a work in progress and only aims for basic compatibility with DrawBot. 🚧</h4>
+<br>
 
-## Install
+# Installation guide
 
 First make a Python3 virtual environment to work in, this way all our dependencies are contained in one working directory:
 ```
